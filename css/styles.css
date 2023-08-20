@@ -630,10 +630,9 @@ img {
 }
 
 /* Subscribbing */
-.footer-subscribe {
+.footer-subscribe-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 .input-btn-wrapper {
   display: flex;
@@ -645,6 +644,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-subscribe-input {
