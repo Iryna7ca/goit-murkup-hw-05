@@ -630,10 +630,7 @@ img {
 }
 
 /* Subscribbing */
-.footer-subscribe-form {
-  display: flex;
-  flex-direction: column;
-}
+
 .footer-subscribe-form {
   display: flex;
   gap: 24px;
@@ -660,7 +657,6 @@ img {
   border-radius: 4px;
   border: 1px solid var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
 }
 
 .footer-subscribe-input::placeholder {
@@ -906,7 +902,7 @@ img {
 }
 
 .checkbox-wrapper {
-  display: inline-flex;
+  display: flex;
   margin-bottom: 24px;
 }
 
@@ -925,7 +921,7 @@ img {
   margin-right: 8px;
 }
 
-input[type='checkbox']::content + .agreement-checkbox {
+input[type='checkbox']:checked + .form-agreement > .agreement-checkbox {
   background-color: var(--ocean);
   fill: var(--cloud);
   border: none;
