@@ -906,28 +906,26 @@ img {
 }
 
 .checkbox-wrapper {
+  display: inline-flex;
   margin-bottom: 24px;
 }
 
 .agreement-checkbox {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid var(--navyblue-modal);
-  border-color: var(--navyblue-modal);
   border-radius: 2px;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.agreement-checkbox-icon {
-  fill: currentColor;
+  margin-right: 8px;
 }
 
-input[type='checkbox']:checked + .agreement-checkbox {
+input[type='checkbox']::content + .agreement-checkbox {
   background-color: var(--ocean);
   fill: var(--cloud);
   border: none;
