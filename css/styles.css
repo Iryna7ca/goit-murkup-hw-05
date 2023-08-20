@@ -665,6 +665,7 @@ img {
 
 .footer-subscribe-input::placeholder {
   color: var(--white);
+  padding-left: 16px;
 }
 
 .footer-subscribe-btn {
